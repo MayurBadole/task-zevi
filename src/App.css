@@ -5,10 +5,19 @@
   background-position: center;
   background-attachment: fixed;
   width: 100vw;
+  height: 120vh;
 }
 
 .zevi-logo {
   position: absolute;
   right: 2rem;
   top: 2rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.space{
+  
 }

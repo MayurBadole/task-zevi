@@ -1,9 +1,14 @@
 import { searchBarIcon } from "../../utils/svgImages";
 import "./SearchFeild.css";
-const SearchFeild = () => {
+const SearchFeild = ({ handleFocus, handleBlur }) => {
   return (
     <div className="container">
-      <input type="text" placeholder="Search" />
+      <input
+        type="text"
+        placeholder="Search"
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+      />
       <img src={searchBarIcon} alt="search bar icon" className="search-bar" />
     </div>
   );
