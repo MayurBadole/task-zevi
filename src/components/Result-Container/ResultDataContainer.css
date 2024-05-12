@@ -1,4 +1,9 @@
-.body-container{
-    display: flex;
-    flex-direction: row;
+.body-container {
+  display: flex;
+  flex-direction: row;
+}
+.zevi-icon {
+  position: absolute;
+  left: 85rem;
+  top: 20px;
 }

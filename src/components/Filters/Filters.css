@@ -1,6 +1,7 @@
 .filters-container {
   margin: 40px;
   width: 20%;
+  margin-top: 145px;
 }
 
 .title {
@@ -8,7 +9,6 @@
   font-weight: 400;
 }
 
-
-.dropdown{
-border-bottom: 2px solid gray;
+.dropdown {
+  border-bottom: 2px solid gray;
 }
