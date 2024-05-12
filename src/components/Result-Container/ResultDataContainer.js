@@ -3,14 +3,14 @@ import Filters from "../Filters/Filters";
 import ProductsContainer from "../Products-Container/ProductsContainer";
 import "./ResultDataContainer.css";
 
-const ResultDataContainer = () => {
+const ResultDataContainer = ({ products }) => {
   return (
     <>
-      <img src={zeviIcon} alt="zevi logo " className="zevi-icon"/>
-      
+      <img src={zeviIcon} alt="zevi logo " className="zevi-icon" />
+
       <div className="body-container">
         <Filters />
-        <ProductsContainer />
+        <ProductsContainer products={products} />
       </div>
     </>
   );

@@ -20,18 +20,32 @@ const BrandFilters = ({ handleBrandSelect }) => {
         <div className="dropdown-content">
           <label>
             <input type="checkbox" onChange={() => handleBrandSelect("jara")} />
-            Jara
+            Adidas
           </label>
           <label>
             <input type="checkbox" onChange={() => handleBrandSelect("H&H")} />
-            H&H
+            Nike
           </label>
           <label>
             <input
               type="checkbox"
               onChange={() => handleBrandSelect("Addidas")}
             />
-            Addidas
+            Puma
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              onChange={() => handleBrandSelect("Addidas")}
+            />
+            Reebok
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              onChange={() => handleBrandSelect("Addidas")}
+            />
+            Under Armour
           </label>
         </div>
       )}
