@@ -3,14 +3,12 @@
   background-image: url("./utils/home-background-image.jpeg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   width: 100vw;
-  height: 100vh;
 }
 
-
-.zevi-logo{
+.zevi-logo {
   position: absolute;
   right: 2rem;
   top: 2rem;
 }
- 
