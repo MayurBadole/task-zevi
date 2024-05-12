@@ -1,0 +1,23 @@
+.dropbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.dropDown-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.dropdown-content label {
+    gap: 25px;
+}
