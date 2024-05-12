@@ -1,5 +1,11 @@
+import Filters from "../Filters/Filters";
+
 const ResultDataContainer = () => {
-  return <div> </div>;
+  return (
+    <div>
+      <Filters />
+    </div>
+  );
 };
 
 export default ResultDataContainer;

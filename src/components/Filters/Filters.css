@@ -1,0 +1,28 @@
+.filters-container {
+  margin: 40px;
+  width: 20%;
+}
+.dropbtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.dropDown-title {
+  margin-right: 130px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+
+.dropdown{
+border-bottom: 2px solid gray;
+}
