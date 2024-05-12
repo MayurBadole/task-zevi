@@ -6,6 +6,7 @@
   background-attachment: fixed;
   width: 100vw;
   height: 120vh;
+  /* object-fit: fill; */
 }
 
 .zevi-logo {
