@@ -26,6 +26,9 @@ const ProductsContainer = () => {
             className="model-img"
             src="https://img.freepik.com/free-photo/charming-girl-stands-street_8353-5373.jpg?t=st=1715516439~exp=1715520039~hmac=8e7bf4740b55b897d2ea20c566d588cf181d86ae749f721f7007dfd658fbab44&w=360"
           />
+          <div className="viewProducts">
+            <span className="text-viewProducts">View Product</span>
+          </div>
           <span>Round neck cotton Tee</span>
           <span>Rs. 599</span>
         </div>

@@ -27,3 +27,31 @@
   width: 22px;
   height: 22px;
 }
+
+.viewProducts {
+  width: 100%;
+  position: absolute;
+  top: 71%;
+  height: 15%;
+  color: white;
+  background: rgba(109, 132, 255, 0.71);
+  text-align: center;
+  display: none;
+}
+.text-viewProducts {
+  position: absolute;
+  top: 7px;
+  left: 60px;
+}
+
+.product-container {
+  position: relative;
+}
+
+.product-container:hover .viewProducts {
+  display: block;
+}
+
+.text-viewProducts {
+  color: white;
+}
