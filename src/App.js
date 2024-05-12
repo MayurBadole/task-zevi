@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import ResultDataContainer from "./components/Result-Container/ResultDataContainer";
 import useFakeProducts from "./useFakeProducts";
@@ -7,7 +7,24 @@ import useFakeProducts from "./useFakeProducts";
 // import { zeviIcon } from "./utils/svgImages";
 
 function App() {
-  const products = useFakeProducts(10);
+  const [page, setPage] = useState(10);
+
+  const products = useFakeProducts(page);
+
+  // infinite scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+        setPage((oldPage) => oldPage + 10);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [page]);
 
   // const [isFocused, setIsFocused] = useState(false);
   // const handleFocus = () => {
