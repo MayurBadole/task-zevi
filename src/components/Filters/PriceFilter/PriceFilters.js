@@ -18,27 +18,27 @@ const PriceRangeFilter = ({ handlePriceRangeSelect }) => {
       </div>
       {isOpen && (
         <div className="dropdown-content">
-          <label>
+          <div>
             <input
               type="checkbox"
-              onChange={() => handlePriceRangeSelect("1000 - 3000")}
+              onChange={() => handlePriceRangeSelect("500 - 1000")}
             />
-            1000 - 3000
-          </label>
-          <label>
+            <span>500 - 1000</span>
+          </div>
+          <div>
             <input
               type="checkbox"
-              onChange={() => handlePriceRangeSelect("5000 - 10,000")}
+              onChange={() => handlePriceRangeSelect("1500 - 5000")}
             />
-            5000 - 10,000
-          </label>
-          <label>
+            <span> 1500 - 5,000</span>
+          </div>
+          <div>
             <input
               type="checkbox"
-              onChange={() => handlePriceRangeSelect("20,000 - 50,000")}
+              onChange={() => handlePriceRangeSelect("5500 - 10000")}
             />
-            20,000 - 50,000
-          </label>
+            <span>5,500 - 10,000</span>
+          </div>
         </div>
       )}
     </div>

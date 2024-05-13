@@ -25,26 +25,26 @@ const RatingsFilter = ({ handleRatingSelect }) => {
       </div>
       {isOpen && (
         <div className="dropdown-content">
-          <label>
+          <div>
             <input type="checkbox" onChange={() => handleRatingSelect("5")} />
             <img src={star5Icon} alt="5 star icon" />
-          </label>
-          <label>
+          </div>
+          <div>
             <input type="checkbox" onChange={() => handleRatingSelect("4")} />
             <img src={star4Icon} alt="4 star icon" />
-          </label>
-          <label>
+          </div>
+          <div>
             <input type="checkbox" onChange={() => handleRatingSelect("3")} />
             <img src={star3Icon} alt="3 star icon" />
-          </label>
-          <label>
+          </div>
+          <div>
             <input type="checkbox" onChange={() => handleRatingSelect("2")} />
             <img src={star2Icon} alt="2 star icon" />
-          </label>
-          <label>
+          </div>
+          <div>
             <input type="checkbox" onChange={() => handleRatingSelect("1")} />
             <img src={star1Icon} alt="1 star icon" />
-          </label>
+          </div>
         </div>
       )}
     </div>

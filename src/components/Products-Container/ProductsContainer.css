@@ -33,7 +33,7 @@
 .viewProducts {
   width: 100%;
   position: absolute;
-  top: 71%;
+  top: 61%;
   height: 15%;
   color: white;
   background: rgba(109, 132, 255, 0.71);
@@ -56,4 +56,25 @@
 
 .text-viewProducts {
   color: white;
+}
+
+.price-data {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6d84ff;
+  margin-top: 12px;
+}
+
+.cross-price {
+  text-decoration: line-through grey;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+}
+
+.products-name{
+  margin-top: 20px;
 }

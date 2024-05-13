@@ -1,13 +1,15 @@
-import { useState } from "react";
 import "./Filters.css";
 import PriceRangeFilter from "./PriceFilter/PriceFilters";
 import RatingsFilter from "./StarRatingFilters/StarFilters";
 import BrandFilters from "./BrandFilters/BrandFilters";
-const Filters = () => {
-  const [selectedBrands, setSelectedBrands] = useState([]);
-  const [selectedPriceRanges, setSelectedPriceRanges] = useState([]);
-  const [selectedRatings, setSelectedRatings] = useState([]);
-
+const Filters = ({
+  selectedBrands,
+  selectedPriceRanges,
+  selectedRatings,
+  setSelectedBrands,
+  setSelectedPriceRanges,
+  setSelectedRatings,
+}) => {
   // Select brand
   function handleBrandSelect(brand) {
     if (selectedBrands.includes(brand)) {

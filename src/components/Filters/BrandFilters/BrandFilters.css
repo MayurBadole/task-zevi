@@ -11,13 +11,18 @@
 }
 
 .dropdown-content {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-    margin-top: 10px;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  gap: 15px;
 }
 
-.dropdown-content label {
-    gap: 25px;
+.dropdown-content div {
+  display: flex;
+  flex-direction: row;
+}
+.dropdown-content div input {
+  width: 25px;
+  margin-left: 0;
 }

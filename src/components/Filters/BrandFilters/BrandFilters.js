@@ -18,35 +18,35 @@ const BrandFilters = ({ handleBrandSelect }) => {
       </div>
       {isOpen && (
         <div className="dropdown-content">
-          <label>
-            <input type="checkbox" onChange={() => handleBrandSelect("jara")} />
-            Adidas
-          </label>
-          <label>
-            <input type="checkbox" onChange={() => handleBrandSelect("H&H")} />
-            Nike
-          </label>
-          <label>
+          <div>
             <input
               type="checkbox"
-              onChange={() => handleBrandSelect("Addidas")}
+              onChange={() => handleBrandSelect("Adidas")}
             />
-            Puma
-          </label>
-          <label>
+            <span>Adidas</span>
+          </div>
+          <div>
+            <input type="checkbox" onChange={() => handleBrandSelect("Nike")} />
+            <span>Nike</span>
+          </div>
+          <div>
+            <input type="checkbox" onChange={() => handleBrandSelect("Puma")} />
+            <span>Puma</span>
+          </div>
+          <div>
             <input
               type="checkbox"
-              onChange={() => handleBrandSelect("Addidas")}
+              onChange={() => handleBrandSelect("Reebok")}
             />
-            Reebok
-          </label>
-          <label>
+            <span>Reebok</span>
+          </div>
+          <div>
             <input
               type="checkbox"
-              onChange={() => handleBrandSelect("Addidas")}
+              onChange={() => handleBrandSelect("Under Armour")}
             />
-            Under Armour
-          </label>
+            <span>Under Armour</span>
+          </div>
         </div>
       )}
     </div>
