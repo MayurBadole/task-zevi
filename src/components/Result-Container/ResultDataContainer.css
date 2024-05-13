@@ -1,6 +1,7 @@
 .body-container {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 .zevi-icon {
   position: absolute;
@@ -41,4 +42,5 @@ input:focus {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 42px;
+  cursor: pointer;
 }

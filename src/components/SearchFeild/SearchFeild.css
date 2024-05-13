@@ -1,6 +1,6 @@
 .container {
   width: 50%;
-   border-radius: 20px;
+  border-radius: 20px;
   background-color: white;
   top: 5rem;
   position: relative;
@@ -30,4 +30,5 @@ input:focus {
   padding-top: 19px;
   padding-bottom: 19px;
   padding-right: 42px;
+  cursor: pointer;
 }

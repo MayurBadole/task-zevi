@@ -36,6 +36,7 @@
 .suggestion-name {
   font-size: 14px;
   font-weight: 300;
+  cursor: pointer;
 }
 
 .suggestion-items {

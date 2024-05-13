@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  margin-top: 15rem;
+  margin-top: 11rem;
   margin-left: 5rem;
 }
 
@@ -33,7 +33,7 @@
 .viewProducts {
   width: 100%;
   position: absolute;
-  top: 61%;
+  top: 53%;
   height: 15%;
   color: white;
   background: rgba(109, 132, 255, 0.71);
@@ -87,3 +87,13 @@
   margin-left: 300px;
   color: red;
 }
+
+.star-icon{
+  margin-top: 15px;
+  width: 50%;
+  
+}
+
+.review{
+  margin-left: 10px;
+ }

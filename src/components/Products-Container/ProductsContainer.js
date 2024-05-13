@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { HeartIcon, HeartfillIcon } from "../../utils/svgImages";
+import {
+  HeartIcon,
+  HeartfillIcon,
+  star1Icon,
+  star2Icon,
+  star3Icon,
+  star4Icon,
+  star5Icon,
+} from "../../utils/svgImages";
 import "./ProductsContainer.css";
 
 const ProductsContainer = ({ products }) => {
@@ -35,6 +43,28 @@ const ProductsContainer = ({ products }) => {
               <div className="price-data">
                 <span className="cross-price">Rs {+product.price + 230}</span>
                 <span>Rs {product.price}</span>
+              </div>
+              <div>
+                <img
+                  className="star-icon"
+                  src={
+                    product.rating === 1
+                      ? star1Icon
+                      : product.rating === 2
+                      ? star2Icon
+                      : product.rating === 3
+                      ? star3Icon
+                      : product.rating === 4
+                      ? star4Icon
+                      : product.rating === 5
+                      ? star5Icon
+                      : ""
+                  }
+                  alt="star icon"
+                />
+                <span className="review">
+                  ({Math.floor(Math.random() * 1000)})
+                </span>
               </div>
             </div>
           ))}
