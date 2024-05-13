@@ -9,7 +9,6 @@ const ResultDataContainer = ({ products }) => {
   const [selectedBrands, setSelectedBrands] = useState([]);
   const [selectedPriceRanges, setSelectedPriceRanges] = useState([]);
   const [selectedRatings, setSelectedRatings] = useState([]);
-  console.log(selectedRatings, "selectedRatings");
   useEffect(() => {
     // Filter products based on selected brands, price ranges, and ratings
     const filtered = products.filter((product) => {
@@ -30,7 +29,6 @@ const ResultDataContainer = ({ products }) => {
 
     setFilteredProducts(filtered);
   }, [products, selectedBrands, selectedPriceRanges, selectedRatings]);
-  console.log(products, "products");
   return (
     <>
       <img src={zeviIcon} alt="zevi logo " className="zevi-icon" />

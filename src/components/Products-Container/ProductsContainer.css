@@ -78,3 +78,12 @@
 .products-name{
   margin-top: 20px;
 }
+
+.NoDataFound{
+  font-size: 50px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 350px;
+  margin-left: 300px;
+  color: red;
+}
