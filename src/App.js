@@ -15,7 +15,10 @@ function App() {
   // infinite scroll
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+      if (
+        window.innerHeight + window.scrollY + 10 >=
+        document.body.scrollHeight
+      ) {
         setPage((oldPage) => oldPage + 10);
       }
     };

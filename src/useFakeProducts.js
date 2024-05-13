@@ -9,7 +9,7 @@ const useFakeProducts = (count, query) => {
       id: faker.string.uuid(),
       name: faker.commerce.productName(),
       brand: generateBrandName(),
-      image: faker.image.fashion(),
+      image: faker.image.url(),
       description: faker.lorem.sentence(),
       price: faker.commerce.price(),
       rating: faker.number.int({ min: 1, max: 5 }),
