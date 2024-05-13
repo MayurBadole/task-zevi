@@ -9,7 +9,7 @@ import { zeviIcon } from "./utils/svgImages";
 
 function App() {
   const [page, setPage] = useState(10);
-
+  const [query, setQuery] = useState("");
   const products = useFakeProducts(page);
 
   // infinite scroll
@@ -45,6 +45,8 @@ function App() {
               <div className="App">
                 <img src={zeviIcon} alt="zevi logo" className="zevi-logo" />
                 <SearchFeild
+                  setQuery={setQuery}
+                  query={query}
                   handleFocus={handleFocus}
                   handleBlur={handleBlur}
                 />
@@ -54,7 +56,13 @@ function App() {
           />
           <Route
             path="/results"
-            element={<ResultDataContainer products={products} />}
+            element={
+              <ResultDataContainer
+                products={products}
+                setQuery={setQuery}
+                query={query}
+              />
+            }
           />
         </Routes>
       </Router>

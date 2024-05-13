@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { faker } from "@faker-js/faker";
 
-const useFakeProducts = (count) => {
+const useFakeProducts = (count, query) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -27,8 +27,16 @@ const useFakeProducts = (count) => {
       return brandWords[Math.floor(Math.random() * brandWords.length)];
     };
     const fakeProducts = Array.from({ length: count }, () => generateProduct());
-    setProducts(fakeProducts);
-  }, [count]);
+
+    // Filter products based on query
+    const filteredProducts = query
+    ? fakeProducts.filter(product =>
+        product.name.toLowerCase().includes(query.toLowerCase())
+      )
+    : fakeProducts;
+
+    setProducts(filteredProducts || fakeProducts);
+  }, [count, query]);
 
   return products;
 };

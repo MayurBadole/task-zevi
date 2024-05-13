@@ -7,3 +7,38 @@
   left: 85rem;
   top: 20px;
 }
+
+.container-i {
+  width: 50%;
+  border-radius: 20px;
+  background-color: white;
+  top: 3rem;
+  position: relative;
+  left: 25rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+input {
+  width: 90%;
+  height: 60%;
+  outline: none;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Inter";
+}
+
+input:focus {
+  outline: none;
+}
+
+.search-bar-i {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 42px;
+}
