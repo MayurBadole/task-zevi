@@ -10,6 +10,7 @@ import { zeviIcon } from "./utils/svgImages";
 function App() {
   const [page, setPage] = useState(10);
   const [query, setQuery] = useState("");
+  const [isFocused, setIsFocused] = useState(false);
   const products = useFakeProducts(page);
 
   // infinite scroll
@@ -30,12 +31,8 @@ function App() {
     };
   }, [page]);
 
-  const [isFocused, setIsFocused] = useState(false);
   const handleFocus = () => {
     setIsFocused(true);
-  };
-  const handleBlur = () => {
-    setIsFocused(false);
   };
 
   return (
@@ -51,7 +48,6 @@ function App() {
                   setQuery={setQuery}
                   query={query}
                   handleFocus={handleFocus}
-                  handleBlur={handleBlur}
                 />
                 {isFocused && <SuggestionBox />}
               </div>

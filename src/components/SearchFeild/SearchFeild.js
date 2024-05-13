@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import useFakeProducts from "../../useFakeProducts";
 import { searchBarIcon } from "../../utils/svgImages";
 import "./SearchFeild.css";
-const SearchFeild = ({ handleFocus, handleBlur, setQuery, query }) => {
+const SearchFeild = ({ handleFocus, setQuery, query }) => {
   const navigate = useNavigate();
 
   useFakeProducts(10, query);
@@ -20,7 +20,6 @@ const SearchFeild = ({ handleFocus, handleBlur, setQuery, query }) => {
         type="text"
         placeholder="Search"
         onFocus={handleFocus}
-        // onBlur={handleBlur}
         onChange={(e) => hanldeInput(e)}
       />
       <span onClick={() => handleSubmit()}>
